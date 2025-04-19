@@ -1,13 +1,17 @@
 #include <stdio.h>
 
 int main() {
-
-    int number=9;
-    if(number%2==0){
-        printf("The number is even");
+    int T,i,n;
+    scanf("%d",&T);
+    for(i=1;i<=T;i++){
+    scanf("%d",&n);
+    if(n%2==0){
+        printf("even");
     }
-    else{
-        printf("The number is odd");
+    else
+    {
+    printf("odd");
+    }
     }
     return 0;
 }
