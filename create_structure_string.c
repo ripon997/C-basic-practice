@@ -8,19 +8,14 @@ struct myStructure{
 };
 
 int main(){
-    struct myStructure s1,s2;
+    struct myStructure s1 = {15,'R',"Ripon"};
+    struct myStructure s2 = {20,'T',"Raihan"};
 
-    s1.myLetter='D';
-    s1.myNum=100;
-    strcpy(s1.myString,"string");
-    s2.myLetter='E';
-    s2.myNum=200;
 
-    printf("My number is: %d\n",s1.myNum);
-    printf("My sentence is: %s\n",s1.myString);
-    printf("My letter is : %c\n",s1.myLetter);
-    printf("My number is: %d\n",s2.myNum);
-    printf("My letter is : %c\n",s2.myLetter);
+
+    printf("%d %c %s\n",s1.myNum,s1.myLetter,s1.myString);
+    printf("%d %c %s\n",s2.myNum,s2.myLetter,s2.myString);
+
 }
 
 
