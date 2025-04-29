@@ -2,11 +2,12 @@
 #include<math.h>
 int main(){
 
-    FILE *fptr;
+    FILE *book;
 
-    fptr = fopen("file.txt","w");
+    book=fopen("book.txt","r");
+    fprintf(book,"Some text");
 
-    fclose(fptr);
+    fclose(book);
 }
 
 
